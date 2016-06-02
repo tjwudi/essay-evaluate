@@ -1,0 +1,23 @@
+<h3>Happy Evaluating! :D</h3>
+<div class="row marketing" hotkey="{'a': loadNext, 'b': loadNext, 'c': loadNext, 'd': loadNext}">
+  <div>
+    <label for="check-feedback">
+      <input type="checkbox" name="check-feedback" id="check-feedback" ng-model="checkFeedback"> Feedback Mode
+    </label>
+
+  </div>
+  <ui-codemirror ng-model="currentData.funcCode" ui-codemirror-opts="editorOptions"></ui-codemirror>
+  <div>
+    Current label: {{ currentData.label }}; LOC (physical): {{ currentData.physical_loc }}; LOC (logical): {{ currentData.logical_loc }}
+  </div>
+  <div>
+    Repo: {{ currentData.repo }}
+  </div>
+  <div>
+    <div class="btn btn-primary" ng-click="loadNext()">Mark as 0</div>
+    <div class="btn btn-primary" ng-click="loadNext()">Mark as 1</div>
+    <div class="btn btn-primary" ng-click="loadNext()">Mark as 2</div>
+    <div class="btn btn-primary" ng-click="loadNext()">Mark as 3</div>
+    <div class="btn btn-primary" ng-click="loadNext()">As is</div>
+  </div>
+</div>
